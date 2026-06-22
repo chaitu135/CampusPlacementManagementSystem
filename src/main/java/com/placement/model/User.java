@@ -19,7 +19,6 @@ public class User {
 		this.password = password;
 		this.email = email;
 		this.role = role;
-		this.status = true;
 	}
 
 	// Full Constructor
