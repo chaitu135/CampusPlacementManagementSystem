@@ -53,21 +53,21 @@ public class UserDAO {
 
 			if (rs.next()) {
 
-				User u = new User();
+				User user = new User();
 
-				u.setUserId(rs.getInt("user_id"));
+				user.setUserId(rs.getInt("user_id"));
 
-				u.setUsername(rs.getString("username"));
+				user.setUsername(rs.getString("username"));
 
-				u.setEmail(rs.getString("email"));
+				user.setEmail(rs.getString("email"));
 
-				u.setPassword(rs.getString("password"));
+				user.setPassword(rs.getString("password"));
 
-				u.setRole(rs.getString("role"));
+				user.setRole(rs.getString("role"));
 
-				u.setStatus(rs.getBoolean("status"));
+				user.setStatus(rs.getBoolean("status"));
 
-				return u;
+				return user;
 			}
 
 		} catch (SQLException e) {
